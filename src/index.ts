@@ -1,3 +1,2 @@
-export class RootClass {
-
-}
+export * from "./RootClass";
+export * from "./SubClass";
