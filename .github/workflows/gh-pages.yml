@@ -18,7 +18,10 @@ jobs:
         node-version: '14'
         cache: 'npm'
     - run: npm ci
-    - run: npx typedoc --out ./docs/api src/index.ts
+    - name : Genarate API Pages
+      run: npx typedoc --out ./docs/api src/index.ts
+    - name: Generate Demo Pages
+      run: npx gulp bundleDemo
     - name: Deploy Github pages
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}

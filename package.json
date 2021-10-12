@@ -4,7 +4,9 @@
   "description": "Minimal tsdoc generation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo_page": "npx gulp bundleDemo",
+    "dev_demo_page": "npx gulp watchDemo"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/MasatoMakino/minimal-tsdoc-action#readme",
   "devDependencies": {
+    "gulptask-demo-page": "github:MasatoMakino/gulptask-demo-page",
+    "moment": "^2.29.1",
     "typedoc": "^0.22.5",
     "typescript": "^4.4.3"
   }
