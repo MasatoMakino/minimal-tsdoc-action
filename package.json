@@ -1,0 +1,23 @@
+{
+  "name": "minimal-tsdoc-action",
+  "version": "0.1.0",
+  "description": "Minimal tsdoc generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasatoMakino/minimal-tsdoc-action.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasatoMakino/minimal-tsdoc-action/issues"
+  },
+  "homepage": "https://github.com/MasatoMakino/minimal-tsdoc-action#readme",
+  "devDependencies": {
+    "typedoc": "^0.22.5",
+    "typescript": "^4.4.3"
+  }
+}
