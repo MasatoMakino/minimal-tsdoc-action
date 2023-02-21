@@ -23,7 +23,7 @@ jobs:
     - name : Generate API Pages
       run: npx typedoc --out ./docs/api src/index.ts
     - name: Generate Demo Pages
-      run: npx gulp bundleDemo
+      run: npx @masatomakino/gulptask-demo-page
     - name: Deploy Github pages
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
